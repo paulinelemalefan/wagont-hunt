@@ -1,0 +1,17 @@
+<div class="container text-center">
+
+<h1>Voici nos produits</h1>
+<p> La liste des produits du <%= @today %> :
+  <ul>
+    <% @products.each do |product| %>
+    <li>product name : <%= product %> </li>
+    <% end %>
+
+  </ul>
+
+</p>
+
+
+
+
+</div>
