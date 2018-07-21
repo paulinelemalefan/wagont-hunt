@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get "/team" => "pages#team"
   get "/contact" => "pages#contact"
   get "/products" => "products#index"
+  get "/products/:id" => "products#show"
 
 end

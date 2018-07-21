@@ -1,17 +1,11 @@
-<div class="container text-center">
-
-<h1>Voici nos produits</h1>
+<h1 class="text-center">Voici nos produits</h1>
 <p> La liste des produits du <%= @today %> :
   <ul>
     <% @products.each do |product| %>
-    <li>product name : <%= product %> </li>
+    <li><%= product.name %> - <i>(<%= product.url %>)</i></li>
     <% end %>
 
   </ul>
 
 </p>
 
-
-
-
-</div>

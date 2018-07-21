@@ -1,7 +1,12 @@
 class ProductsController < ApplicationController
 
+
   def index
-    @today = Date.today
-    @products = ["Kudoz", "Les petites mains", "Wediy"]
+      @products = Product.all
   end
+
+  def show
+    @product = Product.find(params[:id])
+  end
+
 end
