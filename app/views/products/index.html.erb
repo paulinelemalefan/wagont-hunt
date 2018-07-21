@@ -1,11 +1,17 @@
 <h1 class="text-center">Voici nos produits</h1>
-<p> La liste des produits du <%= @today %> :
+<p> <% link_to "Retour", root_path, class: "btn btn-primary" %> </p>
+
+  La liste des produits du <%= @today %> :
   <ul>
     <% @products.each do |product| %>
     <li><%= product.name %> - <i>(<%= product.url %>)</i></li>
     <% end %>
 
   </ul>
-
 </p>
+
+<p>
+
+
+
 

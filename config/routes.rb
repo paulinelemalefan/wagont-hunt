@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/team" => "pages#team"
   get "/contact" => "pages#contact"
 
-resources :products
+  # CRUD actions routes
+  resources :products
 
 end
